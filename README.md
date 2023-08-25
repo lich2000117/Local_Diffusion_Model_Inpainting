@@ -1,8 +1,8 @@
-# Extract 3D information from Diffusion Model inpainting scene.
+# Working Diffusion Inpainting Model + GUI mask creation.
 
-This project is a workable diffusion inpainting model.
+This project release is a workable diffusion inpainting model.
 It is currently **WIP**. 
-The aim of this project is to extract 3D information (depth, Manhattan structure) from the inpainted image.
+The final goal of this project is to extract 3D information (depth, Manhattan structure) from the inpainted image.
 
 This project utilizes a Conda environment to manage its dependencies.
 
@@ -52,15 +52,15 @@ To try diffusion model inpainting, follow these steps:
     - Note that only images with their mask will be used in the model.
 
 1. put your image (**1:1 ratio, must be in png format**) in "./images/" folder.
-2. run script to select your image and use your pointer to create a bounding box(This will create a new mask image under "images" folder, do not change their name).
+2. Run the script to select your image and use your pointer to create a bounding box(This will create a new mask image under "images" folder, do not change their name).
    ```bash
    python make_mask_functions/GUI_make_bounding_box.py
    ```
-3. close all the windows popped up with the program.
+3. Close all the windows that pop up with the program.
 
 ### 2. Generate New Object
 
-1. run script to start diffusion model (You may need to download model parameters upon first usage)
+1. Run script to start diffusion model (You may need to download model parameters upon first usage)
 
    ```bash
    python stable_diffusion.py
